@@ -16,7 +16,7 @@ class MyPytorchModel(nn.Module):
             nn.LeakyReLU(),
             nn.Linear(hparams["hidden_size"],hparams["hidden_size"]),
             nn.LeakyReLU(),
-            nn.Linear(hparams["hidden_size"],hparams["hidden_size"])
+            nn.Linear(hparams["hidden_size"],hparams["num_classes"])
         )
 
         self.hparams = hparams
